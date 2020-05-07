@@ -59,7 +59,7 @@ tokio-tls = { version = "0.3", optional = true }
 async-native-tls = { version = "0.3", optional = true }
 
 [features]
-default = ["geospatial", "tokio-comp", "async-std-comp", "script"]
+default = ["geospatial", "tokio-comp", "async-std-comp", "script", "native-tls"]
 aio = ["bytes", "pin-project-lite", "futures-util", "futures-util/sink", "tokio/sync", "tokio/stream", "tokio/tcp", "tokio/uds", "tokio/io-util", "tokio-util", "tokio-util/codec", "combine/tokio-02"]
 tokio-rt-core = ["tokio-comp", "tokio/rt-core"]
 geospatial = []
